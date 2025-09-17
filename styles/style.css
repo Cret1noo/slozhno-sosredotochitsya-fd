@@ -8,11 +8,226 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: var(--main-font);
 }
 
 .header {
   display: grid;
+  grid-template-rows: 1fr min-content 1fr;
   grid-template-columns: 1fr;
   height: 100vh;
   min-height: 668px;
+  align-items: center;
+  margin: 5px;
+  margin-bottom: 30px;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  border-color: var(--decor-color);
+  padding-right: 10px;
+}
+
+.decorated-zone::before {
+  right: 10px;
+  top: 10px;
+  border-top: 1px solid var(--decor-color);
+  border-right: 1px solid var(--decor-color);
+}
+.decorated-zone::after {
+  bottom: 10px;
+  left: 10px;
+  border-bottom: 1px solid var(--decor-color);
+  border-left: 1px solid var(--decor-color);
+  
+}
+
+.REC {
+  position: absolute;
+  top: 0.625rem;
+  right: 2.375rem;
+  color: var(--accent-color);
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.REC::after {
+  content: "";
+  position: absolute;
+  top: 0.625rem;
+  right: -20px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--decor-color);
+  box-shadow: 0 0 4px 2px var(--decor-color);
+}
+
+/* МЕНЮ */
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+  margin-bottom: 15px;
+  color: var(--decor-color);
+}
+
+.header__theme-menu-item {
+  position: relative;
+  right: 4px;
+  top: 5px;
+  word-spacing: 10px;
+  font-family: var(--main-font, sans-serif);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 8px;
+  letter-spacing: 0;
+  text-align: center;
+  border-color: transparent;
+}
+
+.header__theme-menu-button {
+  outline-color: inherit;
+  border: 1px solid transparent;
+  background-color: inherit;
+  color: var(--accent-color);
+  padding: 8px 13px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+  transition: border-color 0.3s ease;
+}
+
+.header__theme-menu-button:disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+} 
+
+.header__theme-menu-button:focus {              
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+}
+
+
+.header__theme-menu-button_type_dark {
+  border: 1px solid var(--accent-color);
+}
+
+/* НИЖНЯЯ ЧАСТЬ ШАПКИ */
+.header__title {
+  justify-self: center;
+  color: var(--title-color);
+  font-family: var(--main-font);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  position: relative;
+  right: -5px;
+  top: -5px;
+}
+
+.header___description {
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  bottom: 10px;
+  width: 355px;
+  height: 117px;
+}
+
+.header__description-text {
+  font-size: 18px;
+  font-family: var(--main-font);
+  line-height: 23.4px;
+  letter-spacing: 0%;
+  font-weight: 700;
+  color: var(--background-color);
+}
+
+.header__description-decoration {
+  background-color: var(--decor-color);
+}
+
+/* CONTENT */
+
+.content {
+
+}
+
+.content__section {
+  padding-bottom: 50px;
+  width: 355px;
+  justify-self: center;
+}
+
+.content__section-title {
+  font-size: 18px;
+  font-family: var(--main-font);
+  color: var(--accent-color);
+  position: relative;
+  top: 5px;
+}
+
+.title-decor {
+  background-color: var(--decor-color);
+  height: 23px;
+  
+}
+
+.content__section-list {
+  margin-top: 24px;
+  line-height: 23.4px;
+  font-family: var(--main-font);
+}
+
+.content__section-list-item {
+  font-family: var(--main-font);
+  padding-bottom: 20px;
+}
+
+.content__section-list-item-title {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: var(--title-decor-color);
+}
+
+.content__section-text {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.content__link {
+  color: var(--text-color);
+  text-shadow: 2px 1px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.content__link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.content__link:focus {
+  border: 1px solid var(--text-color);
+}
+
+.content__link:focus-visible {
+  outline: none;
 }
