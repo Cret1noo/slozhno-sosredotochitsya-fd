@@ -11,4 +11,7 @@
   --text-color: #F1B2CE;
   --main-font: "IBM Plex Mono", monospace;
   --accent-color: #FF0070;
+  --text-shadow: #DB00FF;
+  --border-color: #FF0070;
+  --border-color-hover: #FF007066;
 }
