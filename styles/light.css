@@ -21,4 +21,10 @@
   --text-shadow: #FFC2E6;
   --title-color-shadow: #FFC2E6;
   --border-color-hover:#32312D66;
+  --title-text-color: #353430;
+
+  .REC {
+    display: none;
+  }
 }
+
