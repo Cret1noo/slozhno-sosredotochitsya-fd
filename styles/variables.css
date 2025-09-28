@@ -15,4 +15,8 @@
   --border-color: #FF0070;
   --border-color-hover: #FF007066;
   --title-text-color: #FF0070;
+
+  .header__theme-menu-button_type_dark {
+    border: none;
+}
 }
