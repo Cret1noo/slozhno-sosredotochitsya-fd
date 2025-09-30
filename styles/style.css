@@ -318,7 +318,7 @@
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 95.7px;
-  color: var(--text-shadow);
+  color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   padding-inline: 10px;
   margin-block-end: 15px;
@@ -518,7 +518,6 @@
 
   .why_content__section-list-item {
     width: 100vh;
-    max-width: 649px;
   }
 
   .main_content__section {
@@ -542,8 +541,8 @@
   }
 
   .with-pictures {
-    width: 649px;
-    padding-inline-end;
+    width: 100%;
+    margin: auto;
   }
   
   .content__section-images {
