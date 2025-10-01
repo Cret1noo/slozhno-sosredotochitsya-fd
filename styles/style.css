@@ -212,7 +212,6 @@
 }
 
 .content__section-text {
-  padding-bottom: px;
   font-size: 18px;
   color: var(--text-color);
 }
@@ -380,7 +379,6 @@
     column-gap: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding-inline: 20px;
     width: 100%;
     padding-block-start: 14px;
   }
@@ -516,8 +514,12 @@
     left: 20px;
   }
 
-  .why_content__section-list-item {
-    width: 100vh;
+  .content__section-title {
+  
+  }
+
+  .content__section_why {
+    width: 100%;
   }
 
   .main_content__section {
@@ -542,7 +544,6 @@
 
   .with-pictures {
     width: 100%;
-    margin: auto;
   }
   
   .content__section-images {
