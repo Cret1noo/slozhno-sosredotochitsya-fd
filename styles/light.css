@@ -41,7 +41,7 @@
     
      
   }
-  .header__decorative-text {
+  :root:not(.theme-dark) .header__decorative-text {
     display: none;
   }
 }

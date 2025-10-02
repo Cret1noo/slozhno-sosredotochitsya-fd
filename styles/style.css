@@ -326,7 +326,7 @@
 /* MEDIA 768 */
 @media (width >= 768px) {
   
-  .header
+  .header,
   .footer {
     max-inline-size: 1024px;
   }
@@ -406,6 +406,15 @@
 
   .how_content__section {
     padding-block: 14px;
+    gap: 20px;
+  }
+
+  .how-title {
+    margin-inline-start: 10px;
+  }
+
+  .with-pictures {
+    max-inline-size: 472px;
   }
   
   .content__section-images {
@@ -544,6 +553,8 @@
 
   .with-pictures {
     width: 100%;
+    max-inline-size: 649px;
+    padding-inline: 0;
   }
   
   .content__section-images {
